@@ -165,10 +165,39 @@
     }
 
     .hero {
+      position: relative;
       aspect-ratio: 16 / 9;
       background: var(--bg);
       border-bottom: 1px solid var(--border);
       overflow: hidden;
+    }
+
+    .badge {
+      position: absolute;
+      top: 0.65rem;
+      right: 0.65rem;
+      z-index: 1;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      line-height: 1;
+      padding: 0.4rem 0.65rem;
+      border-radius: 999px;
+      pointer-events: none;
+    }
+
+    .badge-play {
+      background: var(--accent);
+      color: #14101f;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+    }
+
+    .badge-code {
+      background: rgba(13, 13, 13, 0.82);
+      color: var(--text);
+      border: 1px solid #ffffff33;
+      backdrop-filter: blur(4px);
     }
 
     .hero img {
@@ -351,7 +380,7 @@
       <h2 class="section-title">Projects</h2>
       <ul class="grid">
         <li class="project">
-          <div class="hero"><img src="assets/projects/mrcluckers.jpg" alt="" width="960" height="540" loading="eager" /></div>
+          <div class="hero"><span class="badge badge-play">Play</span><img src="assets/projects/mrcluckers.jpg" alt="" width="960" height="540" loading="eager" /></div>
           <div class="body">
             <h3 class="project-name"><a href="https://mearkus.com/mrcluckers/" target="_blank" rel="noopener">Mr. Cluckers<span class="arrow" aria-hidden="true">↗</span></a></h3>
             <p class="blurb">Ginger's favourite plush toy has a long way to go. A 2D platformer whose hero is a 3D model generated entirely from code.</p>
@@ -362,7 +391,7 @@
           </div>
         </li>
         <li class="project">
-          <div class="hero"><img src="assets/projects/mahjinks.jpg" alt="" width="960" height="540" loading="eager" /></div>
+          <div class="hero"><span class="badge badge-play">Play</span><img src="assets/projects/mahjinks.jpg" alt="" width="960" height="540" loading="eager" /></div>
           <div class="body">
             <h3 class="project-name"><a href="https://mahjinks.com" target="_blank" rel="noopener">Mahjinks<span class="arrow" aria-hidden="true">↗</span></a></h3>
             <p class="blurb">Roguelike mahjong. Build winning hands, score them as Points × Mult and spend your winnings on charms to break the next gate.</p>
@@ -372,7 +401,7 @@
           </div>
         </li>
         <li class="project">
-          <div class="hero"><img src="assets/projects/park.jpg" alt="" width="960" height="540" loading="eager" /></div>
+          <div class="hero"><span class="badge badge-play">Play</span><img src="assets/projects/park.jpg" alt="" width="960" height="540" loading="eager" /></div>
           <div class="body">
             <h3 class="project-name"><a href="https://mearkus.com/park/" target="_blank" rel="noopener">Wild Horizons<span class="arrow" aria-hidden="true">↗</span></a></h3>
             <p class="blurb">Shape a wild landscape, protect its natural wonders and grow it into a National Park.</p>
@@ -383,7 +412,7 @@
           </div>
         </li>
         <li class="project">
-          <div class="hero"><img src="assets/projects/stratum.jpg" alt="" width="960" height="540" loading="lazy" /></div>
+          <div class="hero"><span class="badge badge-play">Play</span><img src="assets/projects/stratum.jpg" alt="" width="960" height="540" loading="lazy" /></div>
           <div class="body">
             <h3 class="project-name"><a href="https://mearkus.com/atcat/" target="_blank" rel="noopener">Stratum<span class="arrow" aria-hidden="true">↗</span></a></h3>
             <p class="blurb">A 3D card-stacking territory game. Bury your rivals solo against AI or online with friends.</p>
@@ -394,7 +423,7 @@
           </div>
         </li>
         <li class="project">
-          <div class="hero"><img src="assets/projects/sunken-hold.jpg" alt="" width="960" height="540" loading="lazy" /></div>
+          <div class="hero"><span class="badge badge-play">Play</span><img src="assets/projects/sunken-hold.jpg" alt="" width="960" height="540" loading="lazy" /></div>
           <div class="body">
             <h3 class="project-name"><a href="https://mearkus.com/dive/" target="_blank" rel="noopener">Sunken Hold<span class="arrow" aria-hidden="true">↗</span></a></h3>
             <p class="blurb">Rival salvage divers race down five ocean trenches, hitching free rides on each other's lines.</p>
@@ -405,7 +434,7 @@
           </div>
         </li>
         <li class="project">
-          <div class="hero"><img src="assets/projects/kaboom.jpg" alt="" width="960" height="540" loading="lazy" /></div>
+          <div class="hero"><span class="badge badge-play">Play</span><img src="assets/projects/kaboom.jpg" alt="" width="960" height="540" loading="lazy" /></div>
           <div class="body">
             <h3 class="project-name"><a href="https://mearkus.com/boom/" target="_blank" rel="noopener">KABOOM // NEON<span class="arrow" aria-hidden="true">↗</span></a></h3>
             <p class="blurb">Catch every bomb the Mad Bomber drops. Rebuilt with HDR bloom, particles and a synth-wave stage.</p>
@@ -416,7 +445,7 @@
           </div>
         </li>
         <li class="project">
-          <div class="hero"><img src="assets/projects/geowars.jpg" alt="" width="960" height="540" loading="lazy" /></div>
+          <div class="hero"><span class="badge badge-play">Play</span><img src="assets/projects/geowars.jpg" alt="" width="960" height="540" loading="lazy" /></div>
           <div class="body">
             <h3 class="project-name"><a href="https://mearkus.com/geowars/" target="_blank" rel="noopener">Geo Wars<span class="arrow" aria-hidden="true">↗</span></a></h3>
             <p class="blurb">A neon twin-stick shooter with 30 levels. Scan a QR code and your phone becomes the gamepad.</p>
@@ -427,7 +456,7 @@
           </div>
         </li>
         <li class="project">
-          <div class="hero"><img src="assets/projects/gentle-rain.jpg" alt="" width="960" height="540" loading="lazy" /></div>
+          <div class="hero"><span class="badge badge-play">Play</span><img src="assets/projects/gentle-rain.jpg" alt="" width="960" height="540" loading="lazy" /></div>
           <div class="body">
             <h3 class="project-name"><a href="https://mearkus.com/rain/" target="_blank" rel="noopener">A Gentle Rain<span class="arrow" aria-hidden="true">↗</span></a></h3>
             <p class="blurb">A calm tile-laying solitaire puzzle. Match flower edges and bloom all eight blossoms.</p>
@@ -438,7 +467,7 @@
           </div>
         </li>
         <li class="project">
-          <div class="hero"><img src="assets/projects/stellar-vengeance.jpg" alt="" width="960" height="540" loading="lazy" /></div>
+          <div class="hero"><span class="badge badge-code">Code</span><img src="assets/projects/stellar-vengeance.jpg" alt="" width="960" height="540" loading="lazy" /></div>
           <div class="body">
             <h3 class="project-name"><a href="https://github.com/mearkus/revenge" target="_blank" rel="noopener">Stellar Vengeance<span class="arrow" aria-hidden="true">↗</span></a></h3>
             <p class="blurb">Chip through the Devourer's shield, charge the Annihilator and strike its core before the Soul Beam finds you.</p>
@@ -448,7 +477,7 @@
           </div>
         </li>
         <li class="project">
-          <div class="hero"><img src="assets/projects/nova-frenzy.jpg" alt="" width="960" height="540" loading="lazy" /></div>
+          <div class="hero"><span class="badge badge-code">Code</span><img src="assets/projects/nova-frenzy.jpg" alt="" width="960" height="540" loading="lazy" /></div>
           <div class="body">
             <h3 class="project-name"><a href="https://github.com/mearkus/nova" target="_blank" rel="noopener">Nova Frenzy<span class="arrow" aria-hidden="true">↗</span></a></h3>
             <p class="blurb">A portrait arcade shooter. Chain combos, grab power-ups and survive wave after wave.</p>
@@ -458,7 +487,7 @@
           </div>
         </li>
         <li class="project">
-          <div class="hero"><img src="assets/projects/our-meals.jpg" alt="" width="960" height="540" loading="lazy" /></div>
+          <div class="hero"><span class="badge badge-code">Code</span><img src="assets/projects/our-meals.jpg" alt="" width="960" height="540" loading="lazy" /></div>
           <div class="body">
             <h3 class="project-name"><a href="https://github.com/mearkus/mealplanner" target="_blank" rel="noopener">Our Meals<span class="arrow" aria-hidden="true">↗</span></a></h3>
             <p class="blurb">A shared family meal planner. Import recipes, plan the week and get a shopping list that syncs live between phones.</p>
@@ -468,7 +497,7 @@
           </div>
         </li>
         <li class="project">
-          <div class="hero"><img src="assets/projects/scalesync.svg" alt="" width="960" height="540" loading="lazy" /></div>
+          <div class="hero"><span class="badge badge-code">Code</span><img src="assets/projects/scalesync.svg" alt="" width="960" height="540" loading="lazy" /></div>
           <div class="body">
             <h3 class="project-name"><a href="https://github.com/mearkus/scalesync" target="_blank" rel="noopener">scalesync<span class="arrow" aria-hidden="true">↗</span></a></h3>
             <p class="blurb">Syncs body-composition readings from a Wyze Scale to Garmin Connect, automatically.</p>
